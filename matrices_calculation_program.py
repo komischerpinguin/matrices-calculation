@@ -3,10 +3,8 @@ import numpy as np  # import numpy with the shortcut "np"
 # Book1 calculation
 print("\nCalculate matrices in Book1\n")
 # set up matrix as a variable
-matrix1 = np.loadtxt('Book1.csv', delimiter=',', skiprows=1,
-                     max_rows=3)  # skiprows =  x: bo qua x lines
-matrix2 = np.loadtxt('Book1.csv', delimiter=',', skiprows=5,
-                     max_rows=3)  # max_rows = x: doc toi da x rows
+matrix1 = np.loadtxt('Book1.csv', delimiter=',', skiprows=1, max_rows=3)  # skiprows =  x: bo qua x lines
+matrix2 = np.loadtxt('Book1.csv', delimiter=',', skiprows=5, max_rows=3)  # max_rows = x: doc toi da x rows
 
 # print the matrices
 print(f"Matrix 1:\n{matrix1}")  # \n xuong dong
@@ -74,3 +72,4 @@ if matrix2_2.shape[0] == matrix2_2.shape[1]:
     print(f"\nThe determinant of the matrix 2.2 is {round(det2_2, 0)}.")
 else:
     print("\nThe matrix is not a square matrix to calculate determinant!")
+
